@@ -7,6 +7,7 @@ import logging
 import random
 import asyncio
 from validators import domain
+from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from Script import script
 from plugins.dbusers import db
 from pyrogram import Client, filters, enums
