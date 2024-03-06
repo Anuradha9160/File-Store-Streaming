@@ -37,7 +37,7 @@ ADMINS = int(environ.get("ADMINS", "2080060354"))
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://DONVIJAYS:DONVIJAYS@cluster0.rh3oaxv.mongodb.net/?retryWrites=true&w=majority")
 CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "mongodb+srv://DONVIJAYS:DONVIJAYS@cluster0.rh3oaxv.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = environ.get("DB_URI", "mongodb+srv://professor:professor@cluster0.qxqouwk.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -45,8 +45,8 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6435241728:AAGxqVKNNOYB2oP7h-LQwk2TK0QaaSVlE8o")
-BOT_USERNAME = environ.get("BOT_USERNAME", "DonFilesStorebot") # your bot username without @
+BOT_TOKEN = environ.get("BOT_TOKEN", "6672910320:AAHeqf3wZ7slvokup9hPmqxS6cx1iakGgag")
+BOT_USERNAME = environ.get("BOT_USERNAME", "DonFilesStreamingBot") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
