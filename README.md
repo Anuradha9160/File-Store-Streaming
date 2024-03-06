@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="VJ-FILE-STORE-BOT Logo">
+  <img src="https://telegra.ph/file/07672e763bd4c9553ae3f.jpg" alt="DON-FILES-STREAMING Logo">
 </p>
 <h1 align="center">
-  VJ FILE STORE BOT
+  DON-FIELS-STREAMING
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ-FILE-STORE-BOT;A+Highly+Advance+File+Store+Bot;Made+By+Yt-@Tech_VJ!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+Tech+VJ;Because+He+Public+The+Paid+Repo;Thank+You!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DON-FILE-STREAMING-BOT;A+Highly+Advance+File+Store+Bot;Made+By+DON-@DONVIJAYS!;With+Clone+Feature+Stream/Download+Link;Custom+Url+Shortner+Auto+Delete+Feature;A+Bot+With+Fully+Advanced+Feature!;Must+Give+Credit+To+DON+VIJAY;Because+He+Public+The+Paid+Repo;Thank+You!)
 </p>
 
 ## Features
@@ -83,13 +83,13 @@
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
-💝 Credit Goes To [Tech VJ](https://telegram.me/Kingvj01)
+💝 Credit Goes To [DONVIJAY](https://telegram.me/DON_VIJAY)
 
-🖍️ This Code Is Fully Written Or Coded And Public By [Tech VJ](https://telegram.me/Kingvj01) So Don't Forgot To Give Credit
+🖍️ This Code Is Fully Written Or Coded And Public By [DONVIJAY](https://telegram.me/DON_VIJAY) So Don't Forgot To Give Credit
 
 💖 And Thank You So Much To All Who Help In This Journey 💕
 
-Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
+Copyright ©️ [DONVIJAY](https://telegram.me/DON_VIJAY)
 
 </b>
 </details>
@@ -98,16 +98,16 @@ Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
 
 <b><details><summary>Tap On Me For See Details Of Owner</summary>
 
-- YouTube Channel : [Tech VJ](https://youtube.com/@Tech_VJ)
-- Telegram Channel : [VJ Botz](https://telegram.me/VJ_Botz)
-- Contact Link : [King VJ](https://telegram.me/Kingvj01)
-- Instagram Id Link : [Tech VJ](https://instagram.com/tech.vj)
+- YouTube Channel : [DONVIJAYS](https://telegram.me/donvijays)
+- Telegram Channel : [VJ Botz](https://telegram.me/donvijays)
+- Contact Link : [King Don](https://telegram.me/don_vijay)
+- Instagram Id Link : [DONVIJAYS](https://telegram.me/donvijays)
 
 </b>
 </details>
 
 
-### Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
+### Copyright ©️ [DONVIJAY](https://telegram.me/DON_VIJAY)
 
 <b>Selling This Repo Or Code Of This Repo For Money Is Strictly Prohibited 🚫</b>
 
