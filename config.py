@@ -33,6 +33,8 @@ def is_enabled(value, default):
 API_ID = int(environ.get("API_ID", "8864773"))
 API_HASH = environ.get("API_HASH", "0d2355c5f0d713381fa9b47d76b4611e")
 ADMINS = int(environ.get("ADMINS", "2080060354"))
+FSUB = int(environ.get("FSUB", "donvijays"))
+
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://DONVIJAYS:DONVIJAYS@cluster0.rh3oaxv.mongodb.net/?retryWrites=true&w=majority")
