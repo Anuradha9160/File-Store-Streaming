@@ -14,7 +14,7 @@ from plugins.users_api import get_user, update_user_info
 from plugins.database import get_file_details
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, InputMediaPhoto
-from config import Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS
+from config import Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS, FSUB
 import re
 import json
 import base64
@@ -52,9 +52,42 @@ async def delete_after_delay(message: Message, delay):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ0
 
+@Client.on_message(filters.command("start"))
+async def start(client, message):       
+    if FSUB:
+        try:
+            # Check if the user is banned
+            user = await client.get_chat_member(FSUB, message.chat.id)
+            if user.status == "kicked":
+                await message.reply_text("Sᴏʀʀʏ, Yᴏᴜ ᴀʀᴇ B ᴀ ɴ ɴ ᴇ ᴅ")
+                return
+        except UserNotParticipant:
+            # If the user is not a participant, prompt them to join
+            await message.reply_text(
+                text="❤️ Pʟᴇᴀꜱᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴇғᴏʀᴇ Uꜱɪɴɢ Mᴇ ❤️",
+                reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton(text="➕ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ➕", url=f"https://t.me/{FSUB}")]
+                ])
+            )
+            return
+        else:
+            # If the user is not banned and is a participant, send the start message
+            start_text = START_TEXT.format(message.from_user.first_name) if hasattr(message, "message_id") else START_TEXT
+            await message.reply_text(
+                text=start_text,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻", url=f"https://t.me/donvijays")],
+                        [InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/donvijays")],
+                        [InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🎞️", url="https://t.me/donvijays")]
+                    ]
+                ),
+                reply_to_message_id=getattr(message, "message_id", None)
+            )
+            return
 
-@Client.on_message(filters.command("start") & filters.incoming)
-async def start(client, message):
+@Client.on_message(filters.command("settings") & filters.incoming)
+async def setting(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
