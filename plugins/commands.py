@@ -75,7 +75,6 @@ async def start(client, message):
                 ])
             )
             return
-             else:
             # If the user is not banned and is a participant, send the start message
             start_text = START_TEXT.format(message.from_user.first_name) if hasattr(message, "message_id") else START_TEXT
             await message.reply_text(
