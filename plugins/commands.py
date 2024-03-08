@@ -53,10 +53,6 @@ async def delete_after_delay(message: Message, delay):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ
 
-START_TEXT = """
-Hᴇʟʟᴏ Mᴀᴡᴀ ❤️ ,ᴍʏ ɴᴀᴍᴇ Don Files Store,【ɪ ᴀᴍ ʟᴀᴛᴇꜱᴛ ᴀᴅᴠᴀɴᴄᴇᴅ】ᴀɴᴅ ᴘᴏᴡᴇʀꜰᴜʟ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʙᴏᴛ +└ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ┘+└sᴛʀᴇᴀᴍ / ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ғᴇᴀᴛᴜʀᴇ┘+├ᴄᴜꜱᴛᴏᴍ ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ ꜱᴜᴘᴘᴏʀᴛ┤+  ᢵᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ sᴜᴘᴘᴏʀᴛ ᢴ ᢾᴀɴᴅ ʙᴇꜱᴛ ᴜɪ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇᢿ
-"""
-
 @Client.on_message(filters.command("start"))
 async def start(client, message):       
     if FSUB:
@@ -73,21 +69,6 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(text="➕ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ➕", url=f"https://t.me/{FSUB}")]
                 ])
-            )
-            return
-        else:
-            # If the user is not banned and is a participant, send the start message
-            start_text = START_TEXT.format(message.from_user.first_name) if hasattr(message, "message_id") else START_TEXT
-            await message.reply_text(
-                text=start_text,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [InlineKeyboardButton("Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻", url=f"https://t.me/donvijays")],
-                        [InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/donvijays")],
-                        [InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🎞️", url="https://t.me/donvijays")]
-                    ]
-                ),
-                reply_to_message_id=getattr(message, "message_id", None)
             )
             return
 
