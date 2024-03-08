@@ -5,7 +5,7 @@
 import re
 from pyrogram import filters, Client, enums
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, UsernameInvalid, UsernameNotModified
-from config import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, BOT_USERNAME
+from config import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, BOT_USERNAME, PUBLIC_FILE_STORE
 from plugins.database import unpack_new_file_id
 from plugins.users_api import get_user, get_short_link
 import re
@@ -20,6 +20,13 @@ import logging
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
+
+async def allowed(_, __, message):
+    if PUBLIC_FILE_STORE:
+        return True
+    if message.from_user and message.from_user.id in ADMINS:
+        return True
+    return False
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
