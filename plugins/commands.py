@@ -53,8 +53,8 @@ async def delete_after_delay(message: Message, delay):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ
 
-@Client.on_message(filters.command("start"))
-async def start(client, message):       
+@Client.on_message(filters.command("settings"))
+async def setting(client, message):       
     if FSUB:
         try:
             # Check if the user is banned
