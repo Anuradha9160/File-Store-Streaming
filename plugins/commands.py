@@ -15,7 +15,7 @@ from plugins.users_api import get_user, update_user_info
 from plugins.database import get_file_details
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, InputMediaPhoto
-from config import Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS, FSUB, PUBLIC_FILE_STORE
+from config import Var, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, AUTO_DELETE_TIME, AUTO_DELETE, ADMINS, FSUB
 import re
 import json
 import base64
@@ -53,8 +53,8 @@ async def delete_after_delay(message: Message, delay):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ
 
-@Client.on_message(filters.command("start"))
-async def start(client, message):       
+@Client.on_message(filters.command("FSUB"))
+async def FSUB(client, message):       
     if FSUB:
         try:
             # Check if the user is banned
